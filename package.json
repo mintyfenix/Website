@@ -1,34 +1,15 @@
 {
-  "name": "website",
-  "version": "1.0.0",
-  "description": "Compliance Website",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "ji": "bundle install",
-    "jb": "bundle exec jekyll build",
-    "start": "npm run ji && npm run jb && pm2 start \"node index.js\" --name \"WEBSITE\"",
-    "dev": "concurrently \"npm:dev-*\"",
-    "dev-watch-site": "bundle exec jekyll build --watch",
-    "dev-watch-app": "node_modules\\.bin\\nodemon index.js --watch index.js --ignore '_site/**'"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Compliance-Resource-Pack/Website.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "Compliance Resource Pack License",
-  "bugs": {
-    "url": "https://github.com/Compliance-Resource-Pack/Website/issues"
-  },
-  "homepage": "https://github.com/Compliance-Resource-Pack/Website#readme",
-  "dependencies": {
-    "axios": "^0.26.0",
-    "dotenv": "^16.0.0",
-    "express": "^4.17.3"
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "concurrently": "^7.0.0",
-    "nodemon": "^2.0.15"
+    "@intlify/nuxt3": "^0.1.10",
+    "nuxt3": "latest"
+  },
+  "dependencies": {
+    "nuxt-i18n": "^6.28.1"
   }
 }
