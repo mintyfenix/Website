@@ -1,6 +1,11 @@
 <template>
   <div>
-    <Navbar />
-    <slot />
+    <Header />
+
+    <PageContainer>
+      <slot />
+    </PageContainer>
+
+    <Footer />
   </div>
 </template>

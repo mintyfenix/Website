@@ -1,11 +1,15 @@
-import en from "./locales/en.json"
-import fr from "./locales/fr.json"
+import { defineNuxtConfig } from "nuxt3";
+import en from "./locales/en.json";
+import fr from "./locales/fr.json";
 
 // src: https://github.com/intlify/nuxt3
 // web: https://phrase.com/blog/posts/nuxt-js-tutorial-i18n/
 
-export default {
-  buildModules: ["@intlify/nuxt3", "@nuxtjs/style-resources", "vuetify"],
+export default defineNuxtConfig({
+  css: [
+    "vuetify/lib/styles/main.css" // global css
+  ],
+  buildModules: ["@intlify/nuxt3", "@nuxtjs/style-resources"],
   intlify: {
     localeDir: "locales",
     vueI18n: {
@@ -13,16 +17,19 @@ export default {
       messages: { en, fr } // todo: use something to automatically takes all json files from /locales
     }
   },
-  css: [
-    "~/assets/scss/index.scss" // global css
-  ],
+  build: {
+    transpile: ["vuetify"]
+  },
   vite: {
+    define: {
+      'process.env.DEBUG': 'false'
+    },
     css: {
       preprocessorOptions: {
         scss: {
           additionalData: '@import "~/assets/scss/variables.scss"; @import "~/assets/scss/mixins.scss";',
         },
       },
-    },
+    }
   }
-}
+})
