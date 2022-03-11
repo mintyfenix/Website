@@ -7,9 +7,14 @@
   },
   "devDependencies": {
     "@intlify/nuxt3": "^0.1.10",
-    "nuxt3": "latest"
+    "@nuxtjs/style-resources": "^1.2.1",
+    "fibers": "^5.0.1",
+    "node-sass": "^6.0.1",
+    "nuxt3": "latest",
+    "sass-loader": "^10.2.1"
   },
   "dependencies": {
-    "nuxt-i18n": "^6.28.1"
+    "nuxt-i18n": "^6.28.1",
+    "sass": "^1.49.9"
   }
 }
