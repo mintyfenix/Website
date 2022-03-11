@@ -8,9 +8,8 @@
   </nav>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
   nav {
-    background-color: rgba(0,0,0,.2);
     margin: 0 auto;
 
     display: flex;
@@ -36,7 +35,7 @@
       }
 
       &.disabled {
-        color: rgba(0,0,0,.2);
+        color: rgba(255,255,255,0.6);
 
         &:hover {
           cursor: default;

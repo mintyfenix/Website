@@ -12,11 +12,11 @@
     "fibers": "^5.0.1",
     "node-sass": "^6.0.1",
     "nuxt3": "latest",
+    "sass": "^1.49.9",
     "sass-loader": "^10.2.1",
     "vuetify": "^3.0.0-alpha.13"
   },
   "dependencies": {
-    "nuxt-i18n": "^6.28.1",
-    "sass": "^1.49.9"
+    "nuxt-i18n": "^6.28.1"
   }
 }
