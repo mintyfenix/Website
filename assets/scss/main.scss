@@ -1425,15 +1425,8 @@ html {
   overflow-y: auto;
 	overflow-x: hidden
 }
-footer {
-	padding: 2rem 1rem;
-	text-align: center
-}
 header {
   padding-bottom: 0.5rem;
-}
-footer, footer p {
-  color: rgba(255, 255, 255, .7);
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-weight: 300
@@ -1444,38 +1437,6 @@ p {
 img:not(.img-gallery) {
   max-width: 100%;
   height: auto;
-}
-@media (min-width: 576px) {
-	footer {
-		padding: 4rem 2rem
-	}
-}
-@media (max-width: 760px) {
-  footer {
-    padding: 0.5rem 1rem;
-
-    .navbar .dropdown-toggle::after {
-      transform: rotate(180deg);
-    }
-    .navbar .show .dropdown-toggle::after {
-      transform: rotate(0deg);
-    }
-
-    .navbar .show > .dropdown-menu {
-      background: rgba(0,0,0,0.4);
-      padding: 0 1rem;
-
-      > .dropdown-item {
-        padding-right: 0;
-        margin-left: 0;
-        text-align: center;
-      }
-    }
-
-    p {
-      margin-bottom: 0.5rem;
-    }
-  }
 }
 /** MAIN STUFF **/
 .container {

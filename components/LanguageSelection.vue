@@ -30,8 +30,6 @@
     }
 
     &:hover {
-      background-color: rgba(255,255,255,.2);
-
       > .lang-select-content {
         display: block;
       }
@@ -44,8 +42,8 @@
     top: calc(3 * var(--padding-normal));
     right: 0;
 
-    background-color: #f9f9f9;
-    min-width: 100%;
+    background-color: rgb(24,24,24);
+    min-width: max-content;
     box-shadow: var(--shadow-small);
     z-index: 1;
 
@@ -57,6 +55,7 @@
       padding: var(--padding-normal);
       text-transform: uppercase;
       font-size: small;
+      color: #fff;
 
       > img {
         width: 32px;
@@ -65,7 +64,11 @@
       }
 
       &:hover {
-        background-color: #f1f1f1;
+        background-color: rgb(48,48,48);
+
+        > a {
+          color: rgb(179, 179, 179);
+        }
       }
     }
   }
