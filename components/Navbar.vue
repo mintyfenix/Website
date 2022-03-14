@@ -31,7 +31,8 @@
       min-width: 120px;
 
       &:hover {
-        background-color: #f1f1f1;
+        color: rgb(179, 179, 179);
+        cursor: pointer;
       }
 
       &.disabled {

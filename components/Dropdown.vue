@@ -19,8 +19,14 @@
       text-decoration: none;
     }
 
-    &:hover > .dropdown-content {
-      display: block;
+    &:hover {
+      > a {
+        color: rgb(179, 179, 179);
+      }
+
+      > .dropdown-content {
+        display: block;
+      }
     }
 
     &.recursive {
@@ -28,7 +34,13 @@
       padding: 12px 16px;
 
       &:hover {
-        background-color: #f1f1f1;
+        cursor: default;
+        background-color: rgb(48,48,48);
+
+        > a {
+          cursor: default;
+          color: rgb(179, 179, 179);
+        }
       }
 
       > .dropdown-btn {
@@ -47,24 +59,25 @@
     position: absolute;
     left: 0;
     top: calc(4 * var(--padding-normal));
-    background-color: #f9f9f9;
+    background-color: rgb(24,24,24);
     width: max-content;
     box-shadow: var(--shadow-small);
     z-index: 1;
 
     > a {
-      color: black;
+      color: #fff;
       padding: 12px 16px;
       text-decoration: none;
       text-align: left;
       display: block;
 
       &:hover {
-        background-color: #f1f1f1;
+        color: rgb(179, 179, 179);
+        background-color: rgb(48,48,48);
       }
 
       &.disabled {
-        color: rgba(0,0,0,.2);
+        color: rgba(255,255,255,.2);
 
         &:hover {
           cursor: default;
